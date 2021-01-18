@@ -369,6 +369,20 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
 
 
 
+/* For smaller phones like iphone 6 */
+ @media (max-width : 800px) and (max-height : 670px){
+
+  .card-custom {
+    height: 80vh;
+  }
+
+  .container-skills{
+   margin-top: 50vh;
+  }
+
+ }
+
+
 
 #skills-section{
   position: relative;
@@ -416,6 +430,19 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
  }
 
 
+ @media (max-width : 800px) and (max-height : 670px){
+  #certifications-section{
+    margin-top: 100vh;
+   }
+  
+   .certifications-container{
+     padding-top: 20vh;
+   }
+
+
+ }
+
+
 .certifications-container{
   position: relative;
   margin-top:8vh ;
@@ -440,7 +467,7 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
 
 .custom-shape-divider-top-1610996664 {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
