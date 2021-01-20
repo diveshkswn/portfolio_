@@ -5,7 +5,16 @@ html,body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+   
   
+}
+
+@media (max-width : 700px){
+
+
+  body{
+    overflow-x: hidden;
+  }
 }
 
 
@@ -483,4 +492,23 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
 
 .custom-shape-divider-top-1610996664 .shape-fill {
   fill: #FFFFFF;
+}
+
+
+
+/* Certification card styling */
+
+@media (max-width : 700px){
+  .card{
+    height: 95vh !important;
+  }
+}
+
+.card{
+  height: 85vh;
+}
+
+
+.btn-card{
+  margin: 3%;
 }
