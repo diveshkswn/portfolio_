@@ -5,9 +5,18 @@ html,body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    
-    overflow-x: hidden ;
+   
+  
 }
+
+@media (max-width : 400px){
+
+
+  html,body{
+    overflow-x: hidden;
+  }
+}
+
 
 
 
@@ -101,12 +110,17 @@ x-sign {
     height: 80vh;
     
     
-    background-color: white;
+    background-color: #0d335d;
 }
-
+.toast{
+  position: absolute;
+  z-index: 1;
+  left: 3%;
+}
 /* Navbar styling */
 .navbar{
-    padding: 1%;
+  
+    
     z-index: 100;
     position: sticky !important;
     top: 0;
@@ -124,7 +138,37 @@ x-sign {
       margin-bottom: 10%;
   }
 
+  @media (max-width : 500px){
+    .theme-button h2{
+      font-size: large;
+    }
 
+    .theme-button[button]{
+      width: 30vw !important;
+    }
+  }
+
+
+  /* scroll animation */
+
+ 
+@keyframes animate
+{
+    0%
+  {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%
+  {
+        opacity: 1;
+    }
+    100%
+  {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
 
 
 
@@ -154,23 +198,28 @@ x-sign {
 
 
 #about-me{
-  padding: 5%;
+  padding: 2%;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     position: relative;
+    background-color: #eff8ff;
 
  
     /* background-color: #232741; */
-    height: 200vh;
+    height: 90vh;
 }
 
 
-
-
-
-
-
-
+/* About me left grid para styling */
+@media (min-width : 600px){
+.about-me-para{
+  padding: 5%;
+  font-size: larger;
+  color: #0d335d;
+  font-family: 'Poppins', sans-serif;
+  text-align: left
+}
+}
 
 
 
@@ -180,22 +229,29 @@ x-sign {
 /* 
 Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
 
+
+ 
+
+
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
 
 
 
-.card {
+.card-custom {
+  
     /* color for dark theme */
   /* background-color: #222831; */
+  overflow: hidden;
     
-  background-color: black;
-  height: 80vh;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
+  background-color: #222831;
+  height: 70vh;
+  border: none;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.7);
-  color: white;
+  color: black;
 }
 
 .card__name {
@@ -209,7 +265,7 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
   border-radius: 50%;
   border: 5px solid #272133;
   margin-top: 20px;
-  box-shadow: 0 10px 50px rgba(235, 25, 110, 1);
+  box-shadow: 0 10px 50px #232741;
 }
 
 
@@ -318,7 +374,7 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
   height: 45px;
   border-radius: 100%;
   display: block;
-  background: linear-gradient(45deg, #ff003c, #c648c8);
+  background: #0d335d;
   transition: all 265ms ease-out;
 }
 
@@ -338,9 +394,156 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
   transition: all 265ms ease-in;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  font-size: 1.2em;
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ END OF CARD DESIGN $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+/* Skills styling */
+
+
+/* For mobile devices */
+
+@media (max-width : 800px){
+
+  .container-skills{
+   margin-top: 35vh;
+  }
+ }
+
+
+
+/* For smaller phones like iphone 6 */
+ @media (max-width : 800px) and (max-height : 670px){
+
+  .card-custom {
+    height: 85vh;
+  }
+
+  .container-skills{
+   margin-top: 60vh;
+  }
+
+ }
+
+
+
+#skills-section{
+  position: relative;
+  
+  margin-top: 10px;
+
+  padding: 5%;
+  text-align: center;
+  height: 80vh;
+}
+
+.skill-col{
+  text-align: left;
+  padding: 2% 5% 2% 5%;
+  transition: .7s all;
+}
+
+.skill-col:hover{
+
+  padding: 2% 0% 2% 0%;
+
+  
+}
+
+
+.img1{
+ 
+  left: 5%;
+  width: 100px;
+
+}
+
+/* For mobile devices */
+
+@media (max-width : 800px){
+
+  #certifications-section{
+   margin-top: 70vh;
+  }
+ 
+  .certifications-container{
+    padding-top: 15vh;
+  }
+
+ }
+
+
+ @media (max-width : 800px) and (max-height : 670px){
+  #certifications-section{
+    margin-top: 100vh;
+   }
+  
+   .certifications-container{
+     padding-top: 20vh;
+   }
+
+
+ }
+
+
+.certifications-container{
+  position: relative;
+  margin-top:8vh ;
+  background: #FC466B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+  font-family: 'Poppins', sans-serif;
+ 
+  text-align: center;
+}
+
+.certifications-container h1{
+  color: aliceblue;
+}
+
+.certifications-content{
+  position: relative;
+  padding-top: 15%;
+}
+
+.custom-shape-divider-top-1610996664 {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1610996664 svg {
+  position: relative;
+  display: block;
+  width: calc(132% + 1.3px);
+  height: 186px;
+}
+
+.custom-shape-divider-top-1610996664 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+
+/* Certification card styling */
+
+@media (max-width : 700px){
+  .card{
+    height: 95vh !important;
+  }
+}
+
+.card{
+  height: 85vh;
+}
+
+
+.btn-card{
+  margin: 3%;
 }

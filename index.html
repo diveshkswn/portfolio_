@@ -16,10 +16,11 @@
 
 
   <!-- custom styling  -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css" id="theme-link">
 </head>
 
 <body>
+  
   <section id="landing">
     <div class="container-fluid container-custom">
       <div class="row">
@@ -61,7 +62,9 @@
 
   <section id="theme">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Divesh</a>
+      <a class="navbar-brand mr-3" href="#">Divesh</a>
+      <a class="navbar-brand ml-5" >  <i class="fas fa-sun fa-2x" id="theme-switcher"></i></a>
+      
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -92,18 +95,37 @@
     </nav>
 
 
+   
 
-    <div class="theme-button">
+
+
+    <!-- <div class="theme-button">
       <h2>Switch theme according to your Preference.</h2>
     </div>
     <div class="theme-button">
       <button class="btn btn-lg btn-dark">Click to toggle theme</button>
-    </div>
+    </div> -->
 
+   
 
   </section>
 
   <section id="about-me">
+
+    <div class="toast show" id="toast-id" role="alert" aria-live="assertive" data-autohide="true">
+      <div class="toast-header">
+        <i class="fas fa-sun fa-2x"></i>
+        <strong class="mr-auto">Theme</strong>
+        <small>1 min ago</small>
+        <button type="button" class="ml-2 mb-1 close" id="toast-close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">
+        Click on the icon above to switch theme.
+      </div>
+    </div>
+    
     <h2>About me</h2>
     <div class="container-fluid">
       <div class="row">
@@ -377,5 +399,49 @@
 
 </script>
 
+
+
+//Theme swither
+
+<script>
+var ele = document.getElementById("theme-switcher");
+var theme = document.querySelector("#theme-link");
+ele.addEventListener("click",function(){
+  console.log(ele.classList);
+  ele.style.transition="all 1s";
+  
+  console.log(ele.classList);
+  if (theme.getAttribute("href") == "css/styles.css") {
+    // ... then switch it to "dark-theme.css"
+    ele.classList.remove("fa-sun");
+  ele.classList.add("fa-moon");
+
+
+    theme.href = "css/styles-dark.css";
+  // Otherwise...
+  } else {
+
+    ele.classList.add("fa-sun");
+    // ... switch it to "light-theme.css"
+    theme.href = "css/styles.css";
+  }
+  
+})
+
+
+</script>
+
+
+<script>
+
+  var toastElement =document.getElementById("toast-id");
+  var closeButton = document.getElementById("toast-close");
+
+  closeButton.addEventListener("click",function(){
+    console.log("working");
+    console.log(toastElement)
+    toastElement.classList.remove("show");
+  })
+</script>
 
 </html>

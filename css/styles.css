@@ -9,10 +9,10 @@ html,body{
   
 }
 
-@media (max-width : 700px){
+@media (max-width : 400px){
 
 
-  body{
+  html,body{
     overflow-x: hidden;
   }
 }
@@ -110,9 +110,13 @@ x-sign {
     height: 80vh;
     
     
-    background-color: white;
+    background-color: #0d335d;
 }
-
+.toast{
+  position: absolute;
+  z-index: 1;
+  left: 3%;
+}
 /* Navbar styling */
 .navbar{
   
@@ -134,7 +138,37 @@ x-sign {
       margin-bottom: 10%;
   }
 
+  @media (max-width : 500px){
+    .theme-button h2{
+      font-size: large;
+    }
 
+    .theme-button[button]{
+      width: 30vw !important;
+    }
+  }
+
+
+  /* scroll animation */
+
+ 
+@keyframes animate
+{
+    0%
+  {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%
+  {
+        opacity: 1;
+    }
+    100%
+  {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
 
 
 
@@ -210,6 +244,7 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
   
     /* color for dark theme */
   /* background-color: #222831; */
+  overflow: hidden;
     
   background-color: #eff8ff;
   height: 70vh;
@@ -306,6 +341,7 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
 
 
 .social-icons {
+ 
   padding: 0;
   list-style: none;
   margin: 1em;
@@ -382,11 +418,11 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
  @media (max-width : 800px) and (max-height : 670px){
 
   .card-custom {
-    height: 80vh;
+    height: 85vh;
   }
 
   .container-skills{
-   margin-top: 50vh;
+   margin-top: 60vh;
   }
 
  }
