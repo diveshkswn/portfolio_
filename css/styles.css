@@ -446,7 +446,7 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
 }
 
 .skill-col:hover{
-
+  
   padding: 2% 0% 2% 0%;
 
   
@@ -553,6 +553,18 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
 
 /* skills new styling */
 
+
+
+.grid-container{
+  padding: 2%;
+  display: grid;
+  grid-gap: 30px 30px;
+  grid-template-columns: auto auto auto auto auto;
+  
+
+}
+
+
 .skill-row{
   padding: 3%;
 }
@@ -560,56 +572,41 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
 
 .skill-box{
   padding: 5px;
-  border: 1px solid lightgreen;
+  border: 1px solid white;
   border-radius: 10px;
   text-align: center;
   color: #9DA5B5;
- animation: scaleSkill 1s;
-
   
 }
 
+.skill-article{
+  
+  opacity: 0;
+    transition: 1s all;
+  
+  
+  }
 
 
+
+  /* changing another element on hover of other */
+
+
+.skill-box:hover > .skill-article{
+
+  opacity: 1;
+}
+
+.skill-box:hover{
+  border: 1px solid lightgreen;
+}
 
 
 .skill-img{
   width: 150px;
 }
 
-.skill-article{
-  height: 0px;
-  display: none;
-  transition: 1s all;
 
-
-}
-
-.skill-article.show{
-  height: 20px;
-  transition: 1s all;
-
-}
-
-
-
-.grid-container{
-  padding: 2%;
-  display: grid;
-  grid-gap: 50px 50px;
-  grid-template-columns: auto auto auto auto auto;
-  transition: all 0.2s;
-
-}
-
-@keyframes scaleSkill{
-  0%{
-    display: none;
-  }
-  100%{
-   display: block;
-  }
-}
 
 @media (max-width : 600px){
   .grid-container{
@@ -621,4 +618,9 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
   .skill-img{
     width: 100px;
   }
+}
+
+
+#projects-sections{
+  height: 100vh;
 }
