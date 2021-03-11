@@ -16,10 +16,11 @@
 
 
   <!-- custom styling  -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles copy.css" id="theme-link">
 </head>
 
 <body>
+
   <section id="landing">
     <div class="container-fluid container-custom">
       <div class="row">
@@ -28,6 +29,7 @@
           <x-sign>
             Divesh
           </x-sign><br>
+
 
           <!-- Typed js content -->
           <!-- cdn and javscript are placed below body -->
@@ -60,7 +62,9 @@
 
   <section id="theme">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Divesh</a>
+      <a class="navbar-brand mr-3" href="#">Divesh</a>
+      <a class="navbar-brand ml-5"> <i class="fas fa-sun fa-2x" id="theme-switcher"></i></a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -92,17 +96,36 @@
 
 
 
-    <div class="theme-button">
+
+
+
+    <!-- <div class="theme-button">
       <h2>Switch theme according to your Preference.</h2>
     </div>
     <div class="theme-button">
       <button class="btn btn-lg btn-dark">Click to toggle theme</button>
-    </div>
+    </div> -->
+
 
 
   </section>
 
   <section id="about-me">
+
+    <div class="toast show" id="toast-id" role="alert" aria-live="assertive" data-autohide="true">
+      <div class="toast-header">
+        <i class="fas fa-sun fa-2x"></i>
+        <strong class="mr-auto">Theme</strong>
+        <small>1 min ago</small>
+        <button type="button" class="ml-2 mb-1 close" id="toast-close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">
+        Click on the icon above to switch theme.
+      </div>
+    </div>
+
     <h2>About me</h2>
     <div class="container-fluid">
       <div class="row">
@@ -147,44 +170,141 @@
 
 
   </section>
-
-
   <section id="skills-section">
-    <div class="skills">
-      <h1>My skills</h1>
-      <li>
-        <h3>PHP</h3><span class="bar"><span class="php"></span></span>
-      </li>
-      <li>
-        <h3>HTML5</h3><span class="bar"><span class="html"></span></span>
-      </li>
-       <li>
-        <h3>CSS3</h3><span class="bar"><span class="css"></span></span>
-      </li>
-       <li>
-        <h3>JQUERY</h3><span class="bar"><span class="jquery"></span></span>
-      </li>
-       <li>
-        <h3>JAVASCRIPT</h3><span class="bar"><span class="javascript"></span></span>
-      </li>
-    </div>
-   
 
+    <h2>Skills and Proficiency</h2>
 
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="skill-box ">
+          <img src="images/Java-01.png" class="skill-img" alt="">
+          <article class="skill-article">
+            Experience of java mainly around creating Business Process of E-commerce Application.
+          </article>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="skill-box ">
+          <img src="images/Amazon-Webservices-01.png" class="skill-img" alt="">
+          <article class="skill-article">
+            Certified AWS Developer with main Expertise around serverless architechture.
+          </article>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="skill-box ">
+          <img src="images/JavaScript-01.png" class="skill-img" alt="">
+          <article class="skill-article">
+            Experience in manupulation DOM/FrontEnd using JS
+          </article>
+        </div>
+      </div>
+      <div class="grid-item">
 
+        <div class="skill-box ">
+          <img src="images/nodejs_png.png" class="skill-img" alt="">
+          <article class="skill-article">
+            Developed a Automatic order Recon project using Express.js in Node.
+          </article>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="skill-box ">
+          <img src="images/CSS-3-01.png" class="skill-img" alt="">
+          <article class="skill-article">
+            Experience of CSS3 mainly in Animating elements.
+          </article>
+        </div>
+        </div>
+
+      </div>
 
   </section>
 
 
-  <section id="exp-section"></section>
+
+
+  <section id="certifications-section">
+
+
+
+    <div class="certifications-container">
+
+      <!-- SVG shape divider -->
+      <div class="custom-shape-divider-top-1610996664">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <div class="certifications-content">
+
+        <h1>Some of my Certifications</h1>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card-section">
+              <div class="card ml-auto mr-auto mt-5 mb-5 " style="width: 18rem; ">
+                <img src="images/Amazon-Webservices-01.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">AWS Certified Developer</h5>
+                  <p class="card-text">demonstrated proficiency in writing applications with AWS service APIs, AWS CLI,
+                    and SDKs; using containers; and deploying with a CI/CD pipeline.</p>
+                  <a href="images/diveshaws.PNG" class="btn btn-primary btn-card">See certificate</a>
+                  <a href="https://www.youracclaim.com/badges/3e46a196-b005-43ec-9002-4722acf4d5ab/public_url"
+                    target="_blank" class="btn btn-primary btn-card">See badge</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card-section">
+
+
+              <div class="card ml-auto mr-auto mt-5 mb-5" style="width: 18rem; ">
+                <img src="images/AutomationAnywhere.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">AWS Certified Developer</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary btn-card">See certificate</a>
+                  <a href="#" class="btn btn-primary btn-card">See badge</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+ 
   <section id="projects-sections"></section>
-  <section id="certifications-section"></section>
+
+
+
+
+
+  <!-- index.js script -->
+
+  <!-- <script src="index.js"></script> -->
+
+  <!-- Bootstrap -->
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
+
+
 
 
   <!-- particle js  -->
@@ -251,5 +371,49 @@
 
 </script>
 
+
+
+<!-- Theme swither -->
+
+<script>
+  var ele = document.getElementById("theme-switcher");
+  var theme = document.querySelector("#theme-link");
+  ele.addEventListener("click", function () {
+    console.log(ele.classList);
+    ele.style.transition = "all 1s";
+
+    console.log(ele.classList);
+    if (theme.getAttribute("href") == "css/styles.css") {
+      // ... then switch it to "dark-theme.css"
+      ele.classList.remove("fa-sun");
+      ele.classList.add("fa-moon");
+
+
+      theme.href = "css/styles-dark.css";
+      // Otherwise...
+    } else {
+
+      ele.classList.add("fa-sun");
+      // ... switch it to "light-theme.css"
+      theme.href = "css/styles.css";
+    }
+
+  })
+
+
+</script>
+
+
+<script>
+
+  var toastElement = document.getElementById("toast-id");
+  var closeButton = document.getElementById("toast-close");
+
+  closeButton.addEventListener("click", function () {
+    console.log("working");
+    console.log(toastElement)
+    toastElement.classList.remove("show");
+  })
+</script>
 
 </html>

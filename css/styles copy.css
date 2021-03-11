@@ -400,67 +400,103 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ END OF CARD DESIGN $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
 
-/* Skills styling */
 
-
-/* For mobile devices */
-
-@media (max-width : 800px){
-
-  .container-skills{
-   margin-top: 35vh;
-  }
- }
-
-
-
-/* For smaller phones like iphone 6 */
- @media (max-width : 800px) and (max-height : 670px){
-
-  .card-custom {
-    height: 85vh;
-  }
-
-  .container-skills{
-   margin-top: 60vh;
-  }
-
- }
-
+/* skills new styling */
 
 
 #skills-section{
-  position: relative;
-  
-  margin-top: 10px;
-
-  padding: 5%;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
-  height: 80vh;
+  padding-top: 50px;
+
 }
 
-.skill-col{
-  text-align: left;
-  padding: 2% 5% 2% 5%;
-  transition: .7s all;
-}
 
-.skill-col:hover{
+
+.grid-container{
+  padding: 2%;
+  padding-top: 100px;
+  display: grid;
+  grid-gap: 30px 30px;
+  grid-template-columns: auto auto auto auto auto;
   
-  padding: 2% 0% 2% 0%;
 
+}
+
+
+.skill-row{
+  padding: 3%;
+}
+
+
+.skill-box{
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  color: #9DA5B5;
   
 }
 
+.skill-article{
+  
+  opacity: 0;
+    transition: 1s all;
+  
+  
+  }
 
-.img1{
- 
-  left: 5%;
-  width: 100px;
 
+
+
+
+  /* changing another element on hover of other */
+
+
+.skill-box:hover > .skill-article{
+
+  opacity: 1;
 }
 
-/* For mobile devices */
+.skill-box:hover{
+  border: 1px solid lightgreen;
+}
+
+
+.skill-img{
+  width: 150px;
+}
+
+
+
+@media (max-width : 600px){
+  .grid-container{
+    
+    grid-template-columns: auto auto ;
+  
+  }
+
+  .skill-img{
+    width: 100px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Certification Section */
 
 @media (max-width : 800px){
 
@@ -551,85 +587,7 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
 
 
 
-/* skills new styling */
 
-
-#exp-section{
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  padding-top: 50px;
-
-}
-
-
-
-.grid-container{
-  padding: 2%;
-  padding-top: 100px;
-  display: grid;
-  grid-gap: 30px 30px;
-  grid-template-columns: auto auto auto auto auto;
-  
-
-}
-
-
-.skill-row{
-  padding: 3%;
-}
-
-
-.skill-box{
-  padding: 5px;
-  border: 1px solid white;
-  border-radius: 10px;
-  text-align: center;
-  color: #9DA5B5;
-  
-}
-
-.skill-article{
-  
-  opacity: 0;
-    transition: 1s all;
-  
-  
-  }
-
-
-
-
-
-  /* changing another element on hover of other */
-
-
-.skill-box:hover > .skill-article{
-
-  opacity: 1;
-}
-
-.skill-box:hover{
-  border: 1px solid lightgreen;
-}
-
-
-.skill-img{
-  width: 150px;
-}
-
-
-
-@media (max-width : 600px){
-  .grid-container{
-    
-    grid-template-columns: auto auto ;
-  
-  }
-
-  .skill-img{
-    width: 100px;
-  }
-}
 
 
 #projects-sections{
