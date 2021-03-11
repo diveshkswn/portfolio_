@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Idea</title>
+  <title>Divesh Keswani</title>
 
   <!-- FontAwesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -16,7 +16,7 @@
 
 
   <!-- custom styling  -->
-  <link rel="stylesheet" href="css/styles.css" id="theme-link">
+  <link rel="stylesheet" href="css/styles-copy.css" id="theme-link">
 </head>
 
 <body>
@@ -63,7 +63,8 @@
   <section id="theme">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand mr-3" href="#">Divesh</a>
-      <a class="navbar-brand ml-5"> <i class="fas fa-sun fa-2x" id="theme-switcher"></i></a>
+      <!-- Disbaled for now -->
+      <!-- <a class="navbar-brand ml-5"> <i class="fas fa-sun fa-2x" id="theme-switcher"></i></a> -->
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -170,101 +171,59 @@
 
 
   </section>
-
-
   <section id="skills-section">
 
+    <h2>Skills and Proficiency</h2>
 
-    <div class="container-skills">
-      <h2>Skills and Proficiency</h2>
-      <!-- Row 1 -->
-      <div class="row">
-        <!-- Row 1 Col 1 -->
-        <div class="col-lg-6 col-md-6 col-sm-12 skill-col ">
-          <img src="images/Java-01.png" class="img1" alt="">
-
-          <div class="progress">
-
-            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated " style="width: 75%"
-              role="progressbar" id="pb1">
-            </div>
-          </div>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="skill-box ">
+          <img src="images/Java-01.png" class="skill-img" alt="">
+          <article class="skill-article">
+            Experience of java mainly around creating Business Process of E-commerce Application.
+          </article>
         </div>
-        <!-- Row 1 Col 2  -->
-        <div class="col-lg-6 col-md-6 col-sm-12 skill-col">
-          <img src="images/Amazon-Webservices-01.png" class="img1" alt="">
-          <div class="progress">
-
-            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 60%"
-              role="progressbar" id="pb1">
-            </div>
-          </div>
-        </div>
-
-
       </div>
-
-
-      <!-- Row 2 -->
-      <div class="row">
-        <!-- Row 1 Col 1 -->
-        <div class="col-lg-6 col-md-6 col-sm-12 skill-col">
-          <img src="images/HTML-5-01.png" class="img1" alt="">
-          <div class="progress">
-
-            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 75%"
-              role="progressbar" id="pb1">
-            </div>
-          </div>
+      <div class="grid-item">
+        <div class="skill-box ">
+          <img src="images/Amazon-Webservices-01.png" class="skill-img" alt="">
+          <article class="skill-article">
+            Certified AWS Developer with main Expertise around serverless architechture.
+          </article>
         </div>
-        <!-- Row 1 Col 2  -->
-        <div class="col-lg-6 col-md-6 col-sm-12 skill-col">
-          <img src="images/CSS-3-01.png" class="img1" alt="">
-          <div class="progress">
-
-            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 75%"
-              role="progressbar" id="pb1">
-            </div>
-          </div>
-        </div>
-
-
       </div>
-
-      <!-- Row 3 -->
-      <div class="row">
-        <!-- Row 1 Col 1 -->
-        <div class="col-lg-6 col-md-6 col-sm-12 skill-col">
-          <img src="images/Bootstrap-01.png" class="img1" alt="">
-          <div class="progress">
-
-            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 75%"
-              role="progressbar" id="pb1">
-            </div>
-          </div>
+      <div class="grid-item">
+        <div class="skill-box ">
+          <img src="images/JavaScript-01.png" class="skill-img" alt="">
+          <article class="skill-article">
+            Experience in manupulation DOM/FrontEnd using JS
+          </article>
         </div>
-        <!-- Row 1 Col 2  -->
-        <div class="col-lg-6 col-md-6 col-sm-12 skill-col">
-          <img src="images/JavaScript-01.png" class="img1" alt="">
-          <div class="progress">
-
-            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 75%"
-              role="progressbar" id="pb1">
-            </div>
-          </div>
-        </div>
-
-
       </div>
+      <div class="grid-item">
 
-
+        <div class="skill-box ">
+          <img src="images/nodejs_png.png" class="skill-img" alt="">
+          <article class="skill-article">
+            Developed a Automatic order Recon project using Express.js in Node.
+          </article>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="skill-box ">
+          <img src="images/CSS-3-01.png" class="skill-img" alt="">
+          <article class="skill-article">
+            Experience of CSS3 mainly in Animating elements.
+          </article>
+        </div>
+      </div>
 
     </div>
 
-
-
-
   </section>
+
+
+
 
   <section id="certifications-section">
 
@@ -308,9 +267,8 @@
               <div class="card ml-auto mr-auto mt-5 mb-5" style="width: 18rem; ">
                 <img src="images/AutomationAnywhere.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">AWS Certified Developer</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <h5 class="card-title">Certified RPA Developer</h5>
+                  <p class="card-text"></p>
                   <a href="#" class="btn btn-primary btn-card">See certificate</a>
                   <a href="#" class="btn btn-primary btn-card">See badge</a>
                 </div>
@@ -326,60 +284,67 @@
     </div>
   </section>
 
-  <section id="exp-section">
+
+  <section id="exp-sections">
+    <h2>Professional Experience</h2>
+
+    <div class="exp-container" data-tilt data-tilt-glare data-tilt-max-glare="0.6">
+      <div class="exp-content">
+        <div class="grid-container-exp">
+          <div class="grid-item"></div>
+          <div class="grid-item">
+            <h3>Accenture</h3>
+            <p>July 30 to present</p>
+            <ul>
+              <li style="font-weight: 900;"> <a
+                  href="https://www.linkedin.com/posts/divesh-keswani-a347b1112_pinnacle-award-fy21-jan-activity-6765649738604912641-EcYv">Honored
+                  with PINNACLE
+                  AWARD 'Rising Star 'FY'21</a> </li>
+                  <br>
+              <li>Experience of working in an
+                E-commerce Web application
+                development.</li>
+                <br>
+
+              <li> Worked as a backend
+                developer in development of
+                custom OMS for POS
+                systems.</li>
+                <br>
+              <li>Worked as a Full-Stack
+                developer for developing an
+                Automated E-Commerce
+                Order reconciliation project.
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-container" data-tilt data-tilt-glare data-tilt-max-glare="0.6">
+      <div class="exp-content">
+        <h3>Hello worl</h3>
+      </div>
+    </div>
 
 
-    <div class="grid-container">
-      <div class="grid-item">
-        <div class="skill-box ">
-          <img src="images/Java-01.png" class="skill-img" alt="">
-          <article class="skill-article">
-            Experience of java mainly around creating Microservices using Spring Boot
-          </article>
-        </div>
-      </div>
-      <div class="grid-item">
-        <div class="skill-box ">
-          <img src="images/Amazon-Webservices-01.png" class="skill-img" alt="">
-          <article class="skill-article">
-            Certified AWS Developer with main Expertise around serverless architechture.
-          </article>
-        </div>
-      </div>
-      <div class="grid-item">
-        <div class="skill-box ">
-          <img src="images/JavaScript-01.png" class="skill-img" alt="">
-          <article class="skill-article">
-            Experience of java mainly around creating Microservices using Spring Boot
-          </article>
-        </div>
-      </div>
-      <div class="grid-item">
-
-        <div class="skill-box ">
-          <img src="images/JavaScript-01.png" class="skill-img" alt="">
-          <article class="skill-article">
-            Experience of java mainly around creating Microservices using Spring Boot
-          </article>
-        </div>
-      </div>
-      <div class="grid-item">
-        <div class="skill-box ">
-          <img src="images/CSS-3-01.png" class="skill-img" alt="">
-          <article class="skill-article">
-            Experience of java mainly around creating Microservices using Spring Boot
-          </article>
-        </div>
-
-      </div>
 
   </section>
-  <section id="projects-sections"></section>
+
+  <section id="projects-sections">
+
+
+
+  </section>
 
 
 
 
 
+
+
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
   <!-- index.js script -->
 
   <!-- <script src="index.js"></script> -->

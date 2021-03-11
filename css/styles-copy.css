@@ -594,7 +594,7 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
 }
 
 .card{
-  height: 85vh;
+  height: 87vh;
 }
 
 
@@ -610,3 +610,86 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
 #projects-sections{
   height: 100vh;
 }
+
+
+
+
+ /* Experience Section */
+
+
+
+
+#exp-sections{
+  padding: 4%;
+  padding-top: 4%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+}
+ .exp-container{
+   margin: 40px 10px 40px auto;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+   height: 550px;
+   width: 950px;
+   background: url("/images/cool-background_3.svg");
+   background-color: #0d335d;
+   border-radius: 25px;
+ }
+
+ .exp-container:nth-child(2){
+  margin: 40px auto 40px 10px;
+ transform-style: preserve-3d;
+ transform: perspective(1000px);
+  height: 550px;
+  width: 950px;
+  background: url("/images/cool-background_2.svg");
+  background-color: #0d335d;
+  border-radius: 25px;
+}
+
+
+ .exp-content{
+   position: absolute;
+   margin:50px ;
+  transform: translateZ(20px);
+   background-color:azure;
+   opacity: .75;
+   height: 450px;
+   width: 850px;
+   border-radius: 20px;
+ }
+
+
+ @media(max-width :800px){
+  .exp-container{
+    height: 70vh;
+    width: 90vw;
+    background-repeat: round;
+  }
+
+  .exp-container:nth-child(2){
+    height: 70vh;
+    width: 90vw;
+    background-repeat: round;
+  }
+
+  .exp-content{
+    font-size: x-small;
+    padding: 8px;
+    margin:20px ;
+    height: 60vh;
+    width: 80vw;
+  }
+
+ }
+
+
+
+ .grid-container-exp{
+  padding: 2%;
+  display: grid;
+  grid-gap: 30px 30px;
+  grid-template-columns: 35% 60% ;
+  
+ }
