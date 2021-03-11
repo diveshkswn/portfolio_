@@ -693,3 +693,20 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
   grid-template-columns: 35% 60% ;
   
  }
+
+.grid-item-logo{
+  background-image: url("/images/Accenture_logo.png");
+  height: 150px;
+  background-size:cover;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 20px;
+}
+
+@media(max-width :800px){
+  .grid-item-logo{
+    height: 50px;
+    background-size: cover;
+  }
+
+}
