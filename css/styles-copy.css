@@ -632,7 +632,7 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
   transform: perspective(1000px);
    height: 550px;
    width: 950px;
-   background: url("/images/cool-background_3.svg");
+   background: url("./images/cool-background_3.svg");
    background-color: #0d335d;
    border-radius: 25px;
  }
@@ -643,7 +643,7 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
  transform: perspective(1000px);
   height: 550px;
   width: 950px;
-  background: url("/images/cool-background_2.svg");
+  background: url("./images/cool-background_2.svg");
   background-color: #0d335d;
   border-radius: 25px;
 }
@@ -695,7 +695,7 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
  }
 
 .grid-item-logo{
-  background-image: url("/images/Accenture_logo.png");
+  background-image: url("./images/Accenture_logo.png");
   height: 150px;
   background-size:cover;
   margin-top: auto;
