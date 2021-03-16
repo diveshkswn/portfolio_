@@ -83,13 +83,17 @@
             <a class="nav-link" href="#skills-section">Skills and Proficiency</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#certifications-section">Certifications</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#exp-sections">Experience</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="#">Personal and Freelance Projects</a>
           </li> -->
+
           <li class="nav-item">
-            <a class="nav-link" href="#certifications-section">Certifications</a>
+            <a class="nav-link" href="#contact-me">Contact Me</a>
           </li>
         </ul>
       </div>
@@ -157,10 +161,12 @@
               <ul class="social-icons">
                 <li><a href="https://www.hackerrank.com/diveshkswn"><i class="fab fa-hackerrank"></i></a></li>
                 <li><a href="https://github.com/diveshkswn"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/divesh-keswani-a347b1112/"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/divesh-keswani-a347b1112/"><i class="fab fa-linkedin"></i></a>
+                </li>
 
               </ul>
-              <button class="btnn draw-border"> <a href="images/Divesh_Keswani_Application_Developer_11-Mar-2021.pdf">Resume</a> </button>
+              <button class="btnn draw-border"> <a
+                  href="images/Divesh_Keswani_Application_Developer_11-Mar-2021.pdf">Resume</a> </button>
               <button class="btnn draw-border">Message</button>
             </div>
 
@@ -245,7 +251,40 @@
 
         <h1>Some of my Certifications</h1>
 
-        <div class="row">
+        <div class="grid-container-certifications">
+
+          <div class="grid-items">
+            <div class="card-cert">
+              <img src="images/Amazon-Webservices-01.png" class="img-cert" alt="Avatar" >
+              <div class="container-cert">
+                <h4><b>AWS Certified Developer</b></h4>
+                <p>Demonstrated proficiency in writing applications with AWS service APIs, AWS CLI,
+                  and SDKs; using containers; and deploying with a CI/CD pipeline.</p>
+                <a href="images/diveshaws.PNG" class="btn btn-primary btn-card">See certificate</a>
+                <a href="https://www.youracclaim.com/badges/3e46a196-b005-43ec-9002-4722acf4d5ab/public_url"
+                  target="_blank" class="btn btn-primary btn-card">See badge</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="grid-items">
+            <div class="card-cert">
+              <img src="images/AutomationAnywhere.png" alt="Avatar" style="width:70%">
+              <div class="container-cert">
+                <h4><b>Certified RPA Developer</b></h4>
+
+                <a href="images/RPA_Certification.JPG" class="btn btn-primary btn-card">See certificate</a>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+
+        <!-- <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="card-section">
               <div class="card ml-auto mr-auto mt-5 mb-5 " style="width: 18rem; ">
@@ -277,7 +316,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
 
 
@@ -288,7 +327,7 @@
 
 
   <section id="exp-sections">
-    <h2>Professional Experience</h2>
+    <h1>Professional Experience</h1>
 
     <div class="exp-container" data-tilt data-tilt-glare data-tilt-max-glare="0.6">
       <div class="exp-content">
@@ -304,54 +343,147 @@
                   href="https://www.linkedin.com/posts/divesh-keswani-a347b1112_pinnacle-award-fy21-jan-activity-6765649738604912641-EcYv">Honored
                   with PINNACLE
                   AWARD 'Rising Star 'FY'21</a> </li>
-                  <br>
+              <br>
               <li>Experience of working in an
                 E-commerce Web application
                 development.</li>
-                <br>
+              <br>
 
               <li> Worked as a backend
                 developer in development of
                 custom OMS for POS
                 systems.</li>
-                <br>
+              <br>
               <li>Worked as a Full-Stack
                 developer for developing an
                 Automated E-Commerce
                 Order reconciliation project.
-                </li>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- <div class="exp-container" data-tilt data-tilt-glare data-tilt-max-glare="0.6">
+    <div class="exp-container" data-tilt data-tilt-glare data-tilt-max-glare="0.6">
       <div class="exp-content">
-        <h3>Hello worl</h3>
+        <div class="grid-container-exp">
+          <div class="grid-item">
+            <div class="grid-item-logo-2">
+              <!-- <img src="images/Accenture_logo.png" height="200px" width="200px" alt=""> -->
+            </div>
+          </div>
+          <div class="grid-item">
+            <h3>Freelance Developer</h3>
+            <ul>
+              <li>
+                Developed a landing page
+                website for an Astrologer
+
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
-    </div> -->
+    </div>
 
 
 
   </section>
-
+  <!-- 
   <section id="projects-sections">
 
 
 
+  </section> -->
+
+  <section id="contact-me">
+    <h1>Want to get in touch ?</h1>
+    <div class="contact-me-container">
+
+
+      <div class="form-container">
+
+        <form action="https://formspree.io/f/xbjpnwzk" method="POST" id="my-form">
+
+          <!-- Name -->
+          <div class="form-group">
+            <label for="formGroupExampleInput">Name</label>
+            <input type="text" name="Name" class="form-control inp" id="formGroupExampleInput">
+          </div>
+
+          <!-- Subject -->
+          <div class="form-group">
+            <label for="formGroupExampleInput">Subject</label>
+            <input type="text" name="Subject" class="form-control" id="formGroupExampleInput">
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" name="Email" class="form-control" id="exampleInputEmail1">
+
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <p id="my-form-status"></p>
+      </div>
+
+      <a href="https://www.linkedin.com/in/divesh-keswani-a347b1112/"><i
+          class="fab fa-linkedin fa-3x form-footer-icon"></i></a>
+
+      <a href="https://github.com/diveshkswn"><i class="fab fa-github fa-3x form-footer-icon"></i></a>
+
+      <a href="mailto:diveshkswn@gmail.com"> <i class="far fa-envelope fa-3x form-footer-icon"></i></a>
+
+
+    </div>
+
   </section>
 
 
 
+  <!-- Form Data submit -->
+  <script>
+    var form = document.getElementById("my-form");
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      status.innerHTML = `<div class="spinner-border text-primary" role="status"></div>`;
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+  </script>
 
 
 
 
+
+  <!-- Vanilla Tilt -->
   <script type="text/javascript" src="vanilla-tilt.js"></script>
   <!-- index.js script -->
 
   <!-- <script src="index.js"></script> -->
+
+  <!-- Bootstrap -->
+  <script>
+
+  </script>
+
 
   <!-- Bootstrap -->
 
