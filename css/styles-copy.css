@@ -442,7 +442,7 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
   padding-top: 100px;
   display: grid;
   grid-gap: 30px 30px;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
   
 
 }
@@ -496,7 +496,7 @@ Reference from a code pen : https://codepen.io/blackellis/pen/jObGbeG */
 @media (max-width : 800px){
   .grid-container{
     
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto;
   
   }
 
